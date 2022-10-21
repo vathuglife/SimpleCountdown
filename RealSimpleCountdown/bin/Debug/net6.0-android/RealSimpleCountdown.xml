@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RealSimpleCountdown</name>
+    </assembly>
+    <members>
+        <member name="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.SongsList">
+            <inheritdoc cref="F:RealSimpleCountdown.ViewModels.MusicPageViewModel.songsList"/>
+        </member>
+        <member name="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.ImageDir">
+            <inheritdoc cref="F:RealSimpleCountdown.ViewModels.MusicPageViewModel.imageDir"/>
+        </member>
+        <member name="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.SongDetails">
+            <inheritdoc cref="F:RealSimpleCountdown.ViewModels.MusicPageViewModel.songDetails"/>
+        </member>
+        <member name="F:RealSimpleCountdown.ViewModels.MusicPageViewModel.addSongCommand">
+            <summary>The backing field for <see cref="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.AddSongCommand"/>.</summary>
+        </member>
+        <member name="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.AddSongCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:RealSimpleCountdown.ViewModels.MusicPageViewModel.AddSong"/>.</summary>
+        </member>
+        <member name="F:RealSimpleCountdown.ViewModels.MusicPageViewModel.deleteSongCommand">
+            <summary>The backing field for <see cref="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.DeleteSongCommand"/>.</summary>
+        </member>
+        <member name="P:RealSimpleCountdown.ViewModels.MusicPageViewModel.DeleteSongCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:RealSimpleCountdown.ViewModels.MusicPageViewModel.DeleteSong(System.String)"/>.</summary>
+        </member>
+    </members>
+</doc>

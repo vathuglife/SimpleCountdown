@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealSimpleCountdown.Pages.TimerPage.CountdownPage"             
+             Title="TimerPage"
+             BackgroundImageSource="main_bg.jpg">
+    
+    <Grid RowDefinitions="*,*">
+        <Label Text="Timer" 
+                   FontFamily="Quicksand" FontSize="30"
+                   Margin="30,25,0,0"
+                   TextColor="White"
+                   Grid.Row="0"/>
+        <Grid RowDefinitions="*,*,*"
+              Margin="10,50,0,0"
+              Grid.Row="1">
+            <GraphicsView x:Name="ProgressView"                                
+                BackgroundColor="Blue"
+                HeightRequest="180"
+                WidthRequest="180"
+                Margin="0,-230,0,0"
+                Grid.Row="0" />
+            <Frame BorderColor="Transparent"
+                   CornerRadius="25"                   
+                   BackgroundColor="#000080"
+                   MaximumWidthRequest="250"
+                   MaximumHeightRequest="50"
+                   
+                   Grid.Row="1"
+                   Margin="-10,-50,0,0">
+
+                <HorizontalStackLayout>
+                    <Image Source="music.png" HeightRequest="35"
+                           WidthRequest="35" Margin="-12,-43,0,0"/>
+                    <Label x:Name="NowPlayingSong"                           
+                           TextColor="White" FontSize="18" 
+                           FontFamily="Quicksand"
+                           Margin="10,-7,0,0"
+                           LineBreakMode="MiddleTruncation"
+                           WidthRequest="200"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <HorizontalStackLayout Grid.Row="2"
+                                   Margin="130,0,0,0">
+                <Image Source="volume.png" HeightRequest="30"
+                       WidthRequest="30"
+                       Margin="5,-30,0,0"/>
+                <Slider Maximum="100"
+                    Minimum="0"                                               
+                    WidthRequest="180"                      
+                    Margin="10,-10,0,0"
+                    Grid.Row="2"                    
+                    />    
+            </HorizontalStackLayout>
+            
+            
+            
+        </Grid>
+       
+    </Grid>
+</ContentPage>

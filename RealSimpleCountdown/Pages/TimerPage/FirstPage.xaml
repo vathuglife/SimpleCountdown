@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"                       
+             x:Class="RealSimpleCountdown.Pages.TimerPage.FirstPage"
+             xmlns:objects="clr-namespace:RealSimpleCountdown.Objects"
+             BackgroundImageSource="main_bg.jpg">
+
+    <Grid RowDefinitions="*,*">
+
+        <Label Text="Session Length" 
+                   FontFamily="Quicksand" FontSize="30"
+                   Margin="30,25,0,0"
+                   TextColor="White"
+                   Grid.Row="0"/>
+
+        <Grid HeightRequest="100"
+            WidthRequest="280"                   
+            ColumnDefinitions="*,*"
+            HorizontalOptions="Center"          
+            Margin="100,-100,20,20"
+            VerticalOptions="CenterAndExpand"
+              Grid.Row="1">
+
+            <ContentView x:Name="TimerDropdown"                
+                             Margin="30,-40,10,10"
+                    HeightRequest="75"
+                    WidthRequest="210"
+                    Grid.Column="0"/>
+
+            <ImageButton x:Name="ProgressButton"                
+                Margin="-40,-55,10,10"
+                Source="play.png"
+                HeightRequest="70"
+                WidthRequest="100"                 
+                Clicked="Clicked"
+                BackgroundColor="Transparent"
+                Grid.Column="1"/>
+        </Grid>
+    </Grid>
+    
+
+        
+</ContentPage>
+
+
+    

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RealSimpleCountdown.MainUI"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:musicPageFolder="clr-namespace:RealSimpleCountdown.Pages.MusicPage"
+    xmlns:timerPageFolder="clr-namespace:RealSimpleCountdown.Pages.TimerPage"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="True"
+    FlyoutWidth="200">
+    
+    <!--Determines how each line is displayed on the FlyoutScreen-->
+    <Shell.FlyoutHeader>
+        <StackLayout Margin="10,20,0,10" HorizontalOptions="Center">
+            <Image Source="stopwatch_nobg.png" HeightRequest="60"/>
+            <Label Text="Simple Countdown" TextColor="White" FontSize="15" HorizontalOptions="Center"/>
+            <Label Text="V1.0" TextColor="White" FontSize="10" HorizontalOptions="Center"/>
+        </StackLayout>
+    </Shell.FlyoutHeader>
+    
+    <Shell.FlyoutBackground>
+        <LinearGradientBrush>
+            <GradientStop Color="#050A30" Offset="0.1"/>
+            <GradientStop Color="#000C66" Offset="0.6"/>
+            <GradientStop Color="#0000FF" Offset="1.4"/>
+        </LinearGradientBrush>
+    </Shell.FlyoutBackground>
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Start" Orientation="Horizontal"
+                         Padding="-3,10,0,10">
+                
+                <Image Source="{Binding FlyoutIcon}" HeightRequest="35" HorizontalOptions="Start"
+                    VerticalOptions="Center"/>
+                <Label Text="{Binding Title}" TextColor="White" FontFamily="Quicksand" HorizontalOptions="End"
+                       Margin="10" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems" Shell.TabBarIsVisible="False">
+        <ShellContent Title="Main Timer" FlyoutIcon="timer.ico" ContentTemplate="{DataTemplate timerPageFolder:FirstPage}"/>
+        <ShellContent Title="Songs" FlyoutIcon="music_notes.png" ContentTemplate="{DataTemplate musicPageFolder:MusicPage}"/>
+    </FlyoutItem>
+
+
+
+</Shell>

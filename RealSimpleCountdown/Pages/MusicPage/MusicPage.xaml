@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:RealSimpleCountdown.ViewModels"     
+             xmlns:ObjectsFolder="clr-namespace:RealSimpleCountdown.Objects"
+             x:Class="RealSimpleCountdown.Pages.MusicPage.MusicPage"
+             BackgroundImageSource="main_bg.jpg"
+             x:DataType="ViewModels:MusicPageViewModel">
+
+    <!--x:DataType: Helps the XAML see all of the Properties (string imageDir) inside the MusicPageViewModel class.-->
+    <ContentPage.BindingContext>
+        <ViewModels:MusicPageViewModel/>
+    </ContentPage.BindingContext>
+    
+    <Grid RowDefinitions="200,*" >
+        <Grid ColumnDefinitions="*,*" Grid.Row="0">
+            <Label Text="Songs" FontFamily="Quicksand" FontSize="30"
+                       TextColor="White" Margin="30,20" Grid.Column="0"/>
+            <ImageButton Source="downloading.png" Grid.Column="1"
+                                 Margin="120,-115,0,0"
+                                 BackgroundColor="Transparent"
+                                 HeightRequest="45"
+                                 WidthRequest="45"
+                                 Command="{Binding AddSongCommand}"/>
+        </Grid>
+
+        <CollectionView Grid.Row="1" 
+                        HeightRequest="240"
+                        WidthRequest="450"
+                        Margin="0,-180,0,0"
+                        ItemsSource="{Binding SongsList}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="ObjectsFolder:MusicDetails">
+                    <Frame BackgroundColor="Transparent" Margin="10"
+                           CornerRadius="30">
+                        <Grid ColumnDefinitions="60,260,30" ColumnSpacing="20">
+                            <Image Source="{Binding ImageDir}" Grid.Column="0"/>
+                            <Label Text="{Binding SongDetails}"  
+                                           Margin="0,0,0,0"
+                                            Grid.Column="1"
+                                            TextColor="White"
+                                            FontFamily="Quicksand"
+                                            HorizontalOptions="Center"
+                                            FontSize="23"                                      
+                                            WidthRequest="260"
+                                   HeightRequest="120"/>
+                            <ImageButton Grid.Column="2" Source="threedots.png"
+                                         BackgroundColor="Transparent"/>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

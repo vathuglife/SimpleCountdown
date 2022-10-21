@@ -1,0 +1,52 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RealSimpleCountdown
+build_property.ProjectDir = E:\My Coding Shits\C# Shits\MAUI_Tests\RealSimpleCountdown\
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/MainApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.MainApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = MainApp\App.xaml
+build_metadata.AdditionalFiles.RelativePath = MainApp\App.xaml
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/MainApp/MainUI.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.MainApp.MainUI.xaml
+build_metadata.AdditionalFiles.TargetPath = MainApp\MainUI.xaml
+build_metadata.AdditionalFiles.RelativePath = MainApp\MainUI.xaml
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/Pages/MusicPage/MusicPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.Pages.MusicPage.MusicPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\MusicPage\MusicPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\MusicPage\MusicPage.xaml
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/Pages/TimerPage/CountdownPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.Pages.TimerPage.CountdownPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TimerPage\CountdownPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TimerPage\CountdownPage.xaml
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/Pages/TimerPage/FirstPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.Pages.TimerPage.FirstPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TimerPage\FirstPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TimerPage\FirstPage.xaml
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/My Coding Shits/C\# Shits/MAUI_Tests/RealSimpleCountdown/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = RealSimpleCountdown.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
