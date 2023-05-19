@@ -12,7 +12,7 @@ This app removes the hassle of setting up the timer, and selecting the suitable 
 1.0 (Deprecated)
 
 ## Code Style
-Object-Oriented
+Object-Oriented, using the MVVM Model 
 
 ## Use Examples
 
