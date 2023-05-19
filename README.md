@@ -17,9 +17,11 @@ Object-Oriented, using the MVVM Model
 ## Use Examples
 
 ## How to use
+### For Windows
 Since .NET MAUI (to date) hasn't support the build for native desktop app, the only way to run this file (so far) is to prepare:
 - Visual Studio 2022
 - .NET MAUI Framework (which can be found in the Visual Studio Installer -> Modify/Update -> .NET MAUI Development section)
 
 After downloading all of the dependencies, just click Run in Visual Studio, then you are done.
-
+### For Android/iOS
+I really haven't planned to write this application specifically for these platforms, so up until now, tutorials for these platforms are not available.
